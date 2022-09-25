@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>1. Введите последовательно значения</h2>
+
+    <a href="#" onclick="enter()">Ввести значение</a>
+    <br>
+    <br>
+    <button onclick="sumInput()">Готово</button>
+
+
+
+    <h2>2. Рассчет стоимости автомобиля</h2>
+    <p>Марка автомобиля</p>
+    <select name="selectmodel" id="selectmod">
+        <option disabled selected='selected'>Выберите марку автомобиля</option>
+        <option id="merc" value='Mec'>Mercedes</option>
+        <option id="toy" value='Toy'>Toyota</option>
+        <option id="bmw" value='Bmw'>BMW</option>
+        <option id="au" value='Au'>Audi</option>
+
+    </select>
+    <p>Год выпуска</p>
+    <select name="selectyear" id="selectyear">
+        <option disabled selected='selected'>Выберите год</option>
+        <option id="year4" value='year4'>2000-2005</option>
+        <option id="year3" value='year3'>2006-2010</option>
+        <option id="year2" value='year2'>2011-2015</option>
+        <option id="year1" value='year1'>2016-2022</option>
+
+    </select>
+    <p>Вид топлива</p>
+    <input type="checkbox" id="ben" name="subscribe" value="newsletter" />
+    <label for="subscribeNews">Бензин</label>
+    <br>
+    <input type="checkbox" id="diz" name="subscribe" value="newsletter" />
+    <label for="subscribeNews">Дизель</label>
+    <br>
+    <input type="checkbox" id="el" name="subscribe" value="newsletter" />
+    <label for="subscribeNews">Электрический или гибридный автомобиль</label>
+    <p>Пробег</p>
+    <input id="user" type="text" placeholder="Пробег автомобиля, км" />
+
+    <p>Тип кузова (список)</p>
+    <input type="checkbox" id="ben" name="subscribe" value="newsletter" />
+    <label for="subscribeNews">Седан</label>
+    <br>
+    <input type="checkbox" id="diz" name="subscribe" value="newsletter" />
+    <label for="subscribeNews">Кроссовер</label>
+    <br>
+    <input type="checkbox" id="el" name="subscribe" value="newsletter" />
+    <label for="subscribeNews">Джип</label>
+    <br>
+    <br>
+
+    <button>Рассчитать!</button>
+
+    <h2>3. Задачи с массивами являются одним из часто встречаемых в работе программиста и, как следствие, на
+        собеседованиях. Поэтому давай потренируемся использовать изученные методы.</h2>
+    <p>3.1. Дан массив ['js', 'css', 'html']. Выведите на экран первый элемент.</p>
+    <button onclick="array1 ()">Вывести</button>
+    <p>3.2. Отфильтруйте массив [0, 1, false, 2, undefined, '', 3, null] от нежелательных значений, таких как false,
+        undefined, пустые строки, 0, null с помощью метода filter. Ожидаемый результат: [1, 2, 3].</p>
+    <button onclick="array2 ()">Отфильтровать</button>
+    <p>3.3. Дан массив [[1,2], [1,2,3], [1,2,3,4]]. Найдите индекс массива, длина которого > 3. Ожидаемый результат: 2
+    </p>
+    <button onclick="array3 ()">Найти</button>
+    <script src="index.js"></script>
+</body>
+
+</html>
